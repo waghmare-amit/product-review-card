@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* -------------------- GLOBAL STYLES -------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* 10px / 16px = 0.625 */
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    width: 40%;
+    align-content: center;
+}
+
+:root{
+    /* FONT SIZES */
+    --text-paragraph: 1.2rem;
+    --text-h1: 3rem;
+
+    /* FONT WEIGHTS */
+    --font-weight-normal: 500;
+    --font-weight-bold: 700;
+
+    /* LETTER SPACING */
+    --letter-spacing-spaced: 5px;
+
+    /* FONT FAMILY */
+    --font-family-1: 'Montserrat';
+    --font-family-2: 'Fraunces';
+
+
+    /* Primary Colors */
+
+    --green500: hsl(158, 36%, 37%);
+    --green700: hsl(158, 42%, 18%);
+
+    /* Neutral Colors */
+
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+
+p, .price sup{
+    color: var(--grey);
+}
+
+h1{
+    color: var(--black);
+}
+
+.price{
+    color: var(--green500);
+}
+
+button{
+    color: var(--white);
+    border: 0 solid;
+}
+
+/* -------------------- COMPONENTS -------------------- */
+
+button{
+    padding: 1rem 1rem;
+    background-color: var(--green500);
+}
+
+button:hover{
+    background-color: var(--green700);
+}
+
+.price sup{
+    text-decoration: line-through;
+}
+
+
+/* -------------------- CONTAINER -------------------- */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--white);
+
+    border-radius: 2rem;
+}
+
+.perfume-image{
+    grid-column: 1 / 2;
+}
+
+.perfume-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.content{
+    grid-column: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    padding: 3rem;
+}
+
+.title{
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-spaced);
+    font-size: var(--text-paragraph);
+    margin-bottom: 2rem;
+}
+
+h1{
+    font-family: var(--font-family-2);
+    font-size: var(--text-h1);
+    margin-bottom: 2rem;
+}
+
+.description{
+    font-size: 1.3rem;
+    font-weight: var(--font-weight-normal);
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.price{
+    font-size: 3rem;
+    font-family: var(--font-family-2);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 2.5rem;
+}
+
+.price sup{
+    font-size: var(--text-paragraph);
+    font-family: var(--font-family-1);
+    position: relative;
+    font-weight: var(--font-weight-normal);
+    margin-left: 1rem;
+}
+
+button{
+    width: 100%;
+    padding: 1.5rem 0;
+    border-radius: 1rem;
+}
+
+
+
+
+
+/* ---------- FOOTER SECTION ---------- */
+.attribution{
+    position: fixed;
+    bottom: 0;
+}
