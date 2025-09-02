@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here to view the frontend mentor solution](https://your-solution-url.com)
+- Solution URL: [Click here to view the frontend mentor solution](https://www.frontendmentor.io/solutions/responsive-product-review-card-pNsZ1FkRvU)
 - Live Site URL: [Click here to view the live website](https://product-review-card-khaki.vercel.app/)
 
 ## My process
